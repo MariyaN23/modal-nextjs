@@ -2,7 +2,6 @@
   "extends": ["stylelint-config-standard"],
   "rules": {
     "at-rule-no-unknown": null,
-    "function-url-quotes": "always",
     "no-descending-specificity": null
   }
 }
