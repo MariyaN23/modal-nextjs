@@ -1,9 +1,9 @@
-import RegistrationPage from "@/pages/RegistrationPage";
+import RegistrationPage from '@/pages/RegistrationPage';
 
 export default function Home() {
-    return (
-        <>
-            <RegistrationPage />
-        </>
-    )
+  return (
+    <>
+      <RegistrationPage />
+    </>
+  );
 }
