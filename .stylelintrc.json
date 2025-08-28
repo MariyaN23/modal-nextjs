@@ -2,6 +2,7 @@
   "extends": ["stylelint-config-standard"],
   "rules": {
     "at-rule-no-unknown": null,
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "import-notation": null
   }
 }
