@@ -1,0 +1,48 @@
+{
+  "name": "modal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "npm run validate && next build --turbopack",
+    "build:next": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "stylelint \"**/*.css\" --fix",
+    "lint:all": "npm run lint && npm run lint:css",
+    "lint:all:fix": "npm run lint:fix && npm run lint:css:fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit",
+    "validate": "npm run type-check && npm run lint:all && npm run format:check",
+    "validate:fix": "npm run type-check && npm run lint:all:fix && npm run format",
+    "prebuild": "npm run validate",
+    "postbuild": "npm run format",
+    "prepare": "husky",
+    "test:all": "npm run validate"
+  },
+  "dependencies": {
+    "next": "15.5.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.2",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-config-tailwindcss": "^1.0.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
